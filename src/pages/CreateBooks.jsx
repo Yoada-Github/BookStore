@@ -37,7 +37,7 @@ function CreateBooks() {
       <h1 className="my-4">Create Book</h1>
       <div className="p-4">
         <div className="my-4">
-          <label className="mx-4">Title</label>
+          <label className="mx-4">Title:</label>
           <input
             type="text"
             value={title}
@@ -47,7 +47,7 @@ function CreateBooks() {
           />
         </div>
         <div className="my-4">
-          <label className="mx-4">Author</label>
+          <label className="mx-4">Author:</label>
           <input
             type="text"
             value={author}
@@ -57,7 +57,7 @@ function CreateBooks() {
           />
         </div>
         <div className="my-4">
-          <label className="mx-4">Publish Year</label>
+          <label className="mx-1">Publish Year:</label>
           <input
             type="number"
             value={publishYear}

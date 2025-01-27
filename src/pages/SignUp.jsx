@@ -17,7 +17,7 @@ function SignUp() {
     }
 
     axios
-      .post('http://localhost:5001/signup', { username, email, password }) // Replace with actual API URL
+      .post('https://backend-vo93.onrender.com/signup', { username, email, password }) // Replace with actual API URL
       .then(() => {
         enqueueSnackbar('Sign Up successful!', { variant: 'success' });
         navigate('/');

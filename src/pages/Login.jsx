@@ -13,7 +13,7 @@ function Login() {
 
   const handleLogin = () => {
     axios
-      .post('http://localhost:5001/login', { username, email, password }) // Adjust the endpoint as needed
+      .post('https://backend-vo93.onrender.com/login', { username, email, password }) // Adjust the endpoint as needed
       .then((response) => {
         const { username, token, userId } = response.data;
 

@@ -16,7 +16,7 @@ const EditBook = () => {
     setLoading(true);
     try {
       const userId = localStorage.getItem('userId')
-      const response = await axios.get(`http://localhost:5001/books/edit/${id}`, {params: {userId: userId}});
+      const response = await axios.get(`https://backend-vo93.onrender.com/books/edit/${id}`, {params: {userId: userId}});
       const { title, author, publishYear } = response.data;
 
       console.log(response)
@@ -49,7 +49,7 @@ const EditBook = () => {
     setError(null); // Reset any previous errors
 
     try {
-      await axios.put(`http://localhost:5001/books/${id}`, data);
+      await axios.put(`https://backend-vo93.onrender.com/books/${id}`, data);
       alert('Book updated successfully!');
       navigate('/home');
     } catch (err) {

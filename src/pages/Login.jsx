@@ -13,9 +13,10 @@ function Login() {
 
   const handleLogin = () => {
     axios
-      .post('https://backend-vo93.onrender.com/login', { username, email, password }) // Adjust the endpoint as needed
+      .post('https://backend-vo93.onrender.com/user/login', { username, email, password }) // Adjust the endpoint as needed
       .then((response) => {
         const { username, token, userId } = response.data;
+        console.log(response.data)
 
         localStorage.setItem('token', token);
         localStorage.setItem('user', username);

@@ -11,7 +11,7 @@ const DeleteBook = () => {
 
   const handleDeleteBook = () => {
     axios
-      .delete(`https://backend-vo93.onrender.com/books/${id}`) // Ensure this matches your backend API
+      .delete(`https://backend-vo93.onrender.com/book/books/${id}`) // Ensure this matches your backend API
       .then(() => {
         enqueueSnackbar('Book deleted successfully', { variant: 'success' });
         navigate('/home');

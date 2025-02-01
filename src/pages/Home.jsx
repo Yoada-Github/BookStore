@@ -17,12 +17,13 @@ const Home = () => {
 
   useEffect(() => {
     const userId = localStorage.getItem('userId')
-    // console.log(userId)
+    console.log(userId)
+    //
     axios
-      .get(`https://backend-vo93.onrender.com/books/${userId}`)
+      .get(`https://backend-vo93.onrender.com/book/books/${userId}`)
       .then((response) => {
         setBooks(response.data);
-        // console.log(response.data)
+        console.log(response.data)
       })
       .catch((error) => {
         console.error('Error fetching books:', error);

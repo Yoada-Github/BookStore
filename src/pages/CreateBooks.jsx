@@ -21,7 +21,7 @@ function CreateBooks() {
     };
 
     axios
-      .post(`https://backend-vo93.onrender.com/books`,  data) 
+      .post(`https://backend-vo93.onrender.com/book/`,  data) 
       .then(() => {
         enqueueSnackbar('Book created successfully', { variant: 'success' });
         navigate('/home');

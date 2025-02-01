@@ -12,7 +12,7 @@ function ShowBook() {
 
     // Fetch the book data from the API
    axios
-      .get(`https://backend-vo93.onrender.com/books/details/${id}`)
+      .get(`https://backend-vo93.onrender.com/book/books/details/${id}`)
       .then((response) => {
         console.log('Book Data:', response.data); // Log the book data
         setBook(response.data);
